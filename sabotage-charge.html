@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ISV-6 Sentinel // NEW REPUBLIC INDUSTRIES</title>
-<meta name="description" content="ISV-6 Sentinel - Imperial dedicated anti-air variant.">
+<title>Sabotage Charge // NEW REPUBLIC INDUSTRIES</title>
+<meta name="description" content="Sabotage Charge - a proximity-armed countdown Zeus objective.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -56,37 +56,32 @@
     <a class="navlink" href="power-link.html"><span class="n">14</span>Power Link</a>
     <a class="navlink" href="access-point.html"><span class="n">15</span>Access Point</a>
     <a class="navlink" href="isv6-executioner.html"><span class="n">16</span>ISV-6 Executioner</a>
-    <a class="navlink active" href="isv6-sentinel.html"><span class="n">17</span>ISV-6 Sentinel</a>
+    <a class="navlink" href="isv6-sentinel.html"><span class="n">17</span>ISV-6 Sentinel</a>
     <a class="navlink" href="isv6-reaper.html"><span class="n">18</span>ISV-6 Reaper</a>
     <a class="navlink" href="isv6-inquisitor.html"><span class="n">19</span>ISV-6 Inquisitor</a>
     <a class="navlink" href="isv6-warden.html"><span class="n">20</span>ISV-6 Warden</a>
     <a class="navlink" href="sustain-link.html"><span class="n">21</span>Sustain Link</a>
-    <a class="navlink" href="sabotage-charge.html"><span class="n">22</span>Sabotage Charge</a>
+    <a class="navlink active" href="sabotage-charge.html"><span class="n">22</span>Sabotage Charge</a>
     <a class="navlink" href="zeus-modules.html"><span class="n">23</span>Zeus Modules Reference</a>
   </nav>
 
   <main>
 
-    <section id="isv6sentinel">
-<div class="section-head"><span class="idx">17</span><h2>ISV-6 Sentinel</h2><span class="rule"></span></div>
-      <p class="lede prose" style="margin-bottom:1rem;"><span class="tag" style="color:#5dffa0;border-color:#5dffa0;">RELEASE</span></p>
-      <p class="lede prose">The Imperial anti-air variant of the ISV-6 line - dual-armed with a rapid-fire flak autocannon and homing AA missiles, sharing the NRV-6 Griffin's hull.</p>
+    <section id="sabotagecharge">
+<div class="section-head"><span class="idx">22</span><h2>Sabotage Charge</h2><span class="rule"></span></div>
+      <p class="lede prose" style="margin-bottom:1rem;"><span class="tag" style="color:var(--amber);border-color:var(--amber);">BETA TESTING</span></p>
+      <p class="lede prose">A live charge with a trigger zone, not a timer that just starts ticking the moment the mission loads. Nothing happens until someone actually walks into the danger area.</p>
 
       <div class="frame" style="margin-top:1.5rem;">
-        <table class="keytable">
-          <thead><tr><th>Spec</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td class="action">Crew</td><td class="key">Driver + Gunner (B1 battle droid)</td></tr>
-            <tr><td class="action">Weapon 1</td><td class="key">35mm AA autocannon, 180 rounds</td></tr>
-            <tr><td class="action">Weapon 2</td><td class="key">Titan AA missiles, 8 carried</td></tr>
-            <tr><td class="action">Turret Traverse</td><td class="key">Full 360°, −10° / +80° elevation</td></tr>
-            <tr><td class="action">Armour</td><td class="key">500</td></tr>
-            <tr><td class="action">Top Speed</td><td class="key">60 km/h</td></tr>
-          </tbody>
-        </table>
+        <ol class="steps prose">
+          <li><span class="step-body">Zeus places one <b>Sabotage Charge</b> module, syncs it to a charge object plus one or more targets (rayshields/containers), and sets a trigger radius - shown as a red circle on the map.</span></li>
+          <li><span class="step-body">The countdown does nothing until a player enters that radius - that's when it arms and the circle disappears.</span></li>
+          <li><span class="step-body">A qualifying player can select <b>Defuse Charge</b> and hold position near it to stop the clock.</span></li>
+          <li><span class="step-body">If time runs out first, the target is disabled permanently - no second chance.</span></li>
+        </ol>
       </div>
 
-      <p class="note prose"><b>Note —</b> functionally identical loadout to the NRV-6 Griffin, under Imperial livery and droid crew.</p>
+      <p class="note prose"><b>Note —</b> the trigger radius can be much bigger than the defuse radius - set a wide "you've entered the kill zone" circle, but a tight spot for the actual defuse work.</p>
     </section>
 
     <footer>New Republic Industries — Field Issue Only</footer>
